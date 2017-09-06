@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Done: Host static resource
  * 
  * Done: Integrate with Heroku and Github
+ * 
+ * TODO: Inject via application.properties
  *  
  * TODO: Add unit tests
  * 
@@ -38,11 +40,6 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Main.class, args);
-    }
-
-    @RequestMapping("/")
-    String index() {
-        return "index";
     }
 
     /* 

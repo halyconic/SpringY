@@ -13,12 +13,12 @@
     <p>This is an example Spring application. In addition to showing that I can program with the Spring Framework, I attempt to show off some computer science concepts the reader may not know.</p>
     <a type="button" class="btn btn-lg btn-default" href="https://linkedin.com/in/stephen-webber"><span class="glyphicon glyphicon-link"></span> 
 LinkedIn</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/halyconic/SpringY"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
 </div>
 <div class="container">
   <div class="alert alert-info text-center" role="alert">
-    Thank you for your consideration during the hiring process. You may find my resume <a href="/resume">here</a>.
+    You may find my resume <a href="/resume"><i>here</i></a>.
   </div>
   <hr>
   <div class="row">
@@ -26,16 +26,32 @@ LinkedIn</a>
       <h3><span class="glyphicon glyphicon-info-sign"></span> The Y combinator</h3>
       <p>Many people are familiar with the company <a href="http://www.ycombinator.com/">Y combinator</a>. Fewer people know this company is actually based on a mathematical concept called the <a href="https://en.wikipedia.org/wiki/Fixed-point_combinator">fixed point combinator</a>. The Y combinator is the most succinct way to implement recursion in lambda calculus.</p>
       <p>If we remove the ability to write recursive code in Java, we can still write code in a style that is not recursive, but then apply the Y combinator to it to make it recursive.</p>
-      <p>The second concept I will use is <a href="https://en.wikipedia.org/wiki/Memoization">memoization</p>. This allows us to trade memory for time, with the optimization divorced from the business logic. Unlike typical caching patterns, the function inputs (or cache keys) are invulnerable to key conflicts that might arise when business requirements change.</p>
+      <p>The second concept I will use is <a href="https://en.wikipedia.org/wiki/Memoization">memoization</a>. This allows us to trade memory for time, with the optimization divorced from the business logic. Unlike typical caching patterns, the function inputs (or cache keys) are invulnerable to key conflicts that might arise when business requirements change.</p>
       <p>I combine these two concepts to implement the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">fibonacci sequence</a>. The sequence goes as follows: 1, 1, 2, 3, 8... where each number is the sum of the previous two numbers, where f(4) = 8. Naturally, when calculating f(4), you must recalculate all previous numbers, so caching is useful here.</p>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
+    <div class="col-md-3">
+      <h3><span class="glyphicon glyphicon-stopwatch"></span> Y Combinator (standard)</h3>
+      <ul>
+        <li th:text="${y_5}"></li>
+        <li th:text="${y_10}"></li>
+        <li th:text="${y_15}"></li>
+        <li th:text="${y_20}"></li>
+        <li th:text="${y_25}"></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3><span class="glyphicon glyphicon-stopwatch"></span> Y Combinator (memoized)</h3>
+      <ul>
+        <li th:text="${m_5}"></li>
+        <li th:text="${m_10}"></li>
+        <li th:text="${m_15}"></li>
+        <li th:text="${m_20}"></li>
+        <li th:text="${m_25}"></li>
+      </ul>
     </div>
   </div> <!-- row -->
    <div class="alert alert-info text-center" role="alert">
-    My intent is to show two complicated concepts that require a deep understanding to combine in a meaningful way. By using the Spring framework I hope to show I am capable of working with less abstract concepts as well, and that my unit tests show a basic proficiency in good software design. I hope you agree, and that you will consider me despite my lack of experience with your particular environment. 
-  </div>
+    By using the Spring framework I attempt to show my comprehension of both practical and abstract concepts, and that my code shows a basic proficiency in software design.</div>
 </div>
 
 </body>
