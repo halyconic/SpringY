@@ -24,13 +24,13 @@ LinkedIn</a>
   <div class="row">
     <div class="col-md-6">
       <h3><span class="glyphicon glyphicon-info-sign"></span> The Y combinator</h3>
-      <p>Many people are familiar with the company <a href="http://www.ycombinator.com/">Y combinator</a>. Fewer people know this company is actually based on a mathematical concept called the <a href="https://en.wikipedia.org/wiki/Fixed-point_combinator">fixed point combinator</a>. The Y combinator is the most succinct way to implement recursion in lambda calculus.</p>
+      <p>Many people are familiar with the company <a href="http://www.ycombinator.com/">Y combinator</a>. Fewer people know the company name is based on a mathematical concept called the <a href="https://en.wikipedia.org/wiki/Fixed-point_combinator">fixed point combinator</a>. The Y combinator is the most succinct way to implement recursion in lambda calculus.</p>
       <p>If we remove the ability to write recursive code in Java, we can still write code in a style that is not recursive, but then apply the Y combinator to it to make it recursive.</p>
       <p>The second concept I will use is <a href="https://en.wikipedia.org/wiki/Memoization">memoization</a>. This allows us to trade memory for time, with the optimization divorced from the business logic. Unlike typical caching patterns, the function inputs (or cache keys) are invulnerable to key conflicts that might arise when business requirements change.</p>
       <p>I combine these two concepts to implement the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">fibonacci sequence</a>. The sequence goes as follows: 1, 1, 2, 3, 5, 8, 13... where each number is the sum of the previous two numbers, where f(5) = 5. Naturally, when calculating f(5), you must recalculate all previous numbers, so caching is useful here.</p>
     </div>
     <div class="col-md-3">
-      <h3><span class="glyphicon glyphicon-dashboard"></span> Y Combinator (standard)</h3>
+      <h3><span class="glyphicon glyphicon-dashboard"></span> Y combinator (standard)</h3>
       <ul>
         <li th:text="${y_5}"></li>
         <li th:text="${y_10}"></li>
@@ -40,7 +40,7 @@ LinkedIn</a>
       </ul>
     </div>
     <div class="col-md-3">
-      <h3><span class="glyphicon glyphicon-dashboard"></span> Y Combinator (memoized)</h3>
+      <h3><span class="glyphicon glyphicon-dashboard"></span> Y combinator (memoized)</h3>
       <ul>
         <li th:text="${m_5}"></li>
         <li th:text="${m_10}"></li>
